@@ -11,6 +11,6 @@ workflow MY_WORKFLOW {
     CONVERTTOUPPER.out.upper.view { it }
 }
 
-workflow {
+workflow { // main workflow where everythin starts, later broken down into smaller sub-workflows
     MY_WORKFLOW()
 }

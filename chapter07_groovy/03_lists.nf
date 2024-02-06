@@ -18,6 +18,9 @@ assert list[-1..0] == list.reverse()
 
 assert [1, 2, 3] << 1 == [1, 2, 3, 1]
 assert [1, 2, 3] + [1] == [1, 2, 3, 1]
+// alternatively ot above
+assert [1, 2, 3].add(1) == [1, 2, 3, 1]
+
 assert [1, 2, 3, 1] - [1] == [2, 3]
 assert [1, 2, 3] * 2 == [1, 2, 3, 1, 2, 3]
 assert [1, [2, 3]].flatten() == [1, 2, 3]

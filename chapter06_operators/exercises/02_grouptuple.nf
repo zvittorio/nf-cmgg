@@ -2,3 +2,9 @@
 // the files in the folder ../data/meta/, then use 
 // a map to associate the baseName method to each file.
 // Finally, group all files that have the same common prefix.
+
+Channel
+    .fromPath("./data/meta/*")
+    .map { [it.baseName, it.name ]}
+    .groupTuple()
+    .view()

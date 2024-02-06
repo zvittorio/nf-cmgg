@@ -3,7 +3,7 @@ params.prot = "${projectDir}/data/*.tfa"
 proteins = Channel.fromPath(params.prot)
 
 process BLASTSEQ {
-    publishDir "$params.outdir/bam_files", mode: 'copy'
+    publishDir "$params.outdir/bam_files", mode: 'copy' // specify where your process will output your files
 
     input:
     path fasta

@@ -12,5 +12,5 @@ else
 // conditional expressions
 println list ? list : 'The list is empty'
 
-// elvis operator
+// elvis operator: you use it if something is empty
 println list ?: 'The list is empty'

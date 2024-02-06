@@ -7,5 +7,5 @@ bar = [4, 5, 6]
 
 Channel
     .of(foo, bar)
-    .flatten()
+    .flatten() // with this you pass all values individually (again, with no order)
     .view()

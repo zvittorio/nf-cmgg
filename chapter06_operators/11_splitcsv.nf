@@ -22,5 +22,5 @@ Channel
 Channel
     .fromPath("data/regions.tsv", checkIfExists: true)
     // use `sep` option to parse TAB separated files
-    .splitCsv(sep: '\t')
+    .splitCsv(sep: '\t') // so that you can also read BED files
     .view()

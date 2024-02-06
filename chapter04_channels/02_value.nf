@@ -2,9 +2,9 @@
 // Can be created with Channel.value()
 // These operators output a value channel: first, last, collect, count, min, max, reduce, sum
 
-ch1 = Channel.of(1, 2, 3)
-ch2 = Channel.of(1)
-// ch2 = Channel.value(1)
+ch1 = Channel.of(1, 2, 3) // Queue channel
+ch2 = Channel.of(1) // Queue channel
+// ch2 = Channel.value(1) // Value channel
 
 process SUM {
     input:

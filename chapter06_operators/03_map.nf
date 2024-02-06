@@ -9,4 +9,5 @@ Channel
 Channel
     .of('hello', 'world')
     .map { word -> [word, word.size()] } // custom named variables can be specified like this
+    // this operation is very useful to change the output of a process and make it readable to another process
     .view()

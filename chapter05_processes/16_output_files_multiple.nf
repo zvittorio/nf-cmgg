@@ -11,6 +11,7 @@ process SPLITLETTERS {
 workflow {
     letters = SPLITLETTERS()
     letters
-        .flatMap()
-        .view { "File: ${it.name} => ${it.text}" }
+        .flatMap() // creates a new channel entry from 
+        // each item in the list
+        .view { "File: ${it.name} => ${it.text}" } 
 }

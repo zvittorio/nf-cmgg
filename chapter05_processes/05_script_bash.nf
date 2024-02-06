@@ -1,4 +1,8 @@
 process FOO {
+    def FOO="bar" // you can also define an internal variable
+    // but as long as you use the escape '\' sign inside the double quotes (below)
+    // it will use the BASH variable
+
     debug true
 
     script: // Double quotes => allows use of external variables
@@ -20,5 +24,5 @@ process BAR {
 
 workflow {
     FOO()
-    BAR()
+    //BAR()
 }

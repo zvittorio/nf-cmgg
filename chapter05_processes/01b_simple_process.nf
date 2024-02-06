@@ -17,5 +17,6 @@ process SAYHELLO {
 }
 
 workflow {
-    SAYHELLO(Channel.of("Hello"))
+    SAYHELLO(Channel.of("Hello", "world!")) // you can also extend it to as many values as you want
+    // but they order is meaningless
 }

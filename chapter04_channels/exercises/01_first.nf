@@ -3,6 +3,7 @@
 
 ch1 = Channel.of(1, 2, 3)
 ch2 = Channel.of(1)
+// ch2 = Channel.value(1) // option 1 
 
 process SUM {
     input:
@@ -19,5 +20,7 @@ process SUM {
 }
 
 workflow {
-    SUM(ch1, ch2).view()
+    SUM(ch1, ch2.first()).view() // option 2: first takes the first value of a channel
+    // and creates a value channel from it
+    // because .first outputs a value channel
 }

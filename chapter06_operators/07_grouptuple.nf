@@ -5,3 +5,5 @@ Channel
     .of([1, 'A'], [1, 'B'], [2, 'C'], [3, 'B'], [1, 'C'], [2, 'A'], [3, 'D'])
     .groupTuple()
     .view()
+
+// this could be used to merge multiple fastq files of one sample

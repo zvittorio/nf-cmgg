@@ -3,5 +3,5 @@ Channel
 
 // The .. notation can be used to specify all values between two integers
 Channel
-    .of(1..23, 'X', 'Y')
+    .of(1..22, 'X', 'Y') // .. means the range
     .view()

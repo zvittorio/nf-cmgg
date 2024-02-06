@@ -14,6 +14,6 @@ process FOO {
 }
 
 workflow {
-    receiver_ch = FOO(Channel.of(methods))
+    receiver_ch = FOO(Channel.fromList(methods)) // fromList creates a queue channel
     receiver_ch.view { "Received: $it" }
 }

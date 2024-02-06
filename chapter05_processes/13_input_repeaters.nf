@@ -6,7 +6,7 @@ process ALIGNSEQUENCES {
 
     input: // Not often used
     path seq
-    each mode
+    each mode // like a for loop in python: for each 'mode' that is passed, do this...
 
     script:
     """

@@ -8,5 +8,5 @@ Channel
 // A glob pattern can also be used
 
 Channel
-    .fromPath('*.nf')
+    .fromPath('*.nf') // this also creates a queue channel
     .view()

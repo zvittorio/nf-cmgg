@@ -3,7 +3,7 @@
 
 Channel
     .of(1, 2, 3, 40, 50)
-    .branch {
+    .branch { // split a channel into two
         small: it < 10
         large: it >= 10
     }

@@ -4,6 +4,7 @@ params.outdir = 'results'
 samples_ch = Channel.fromFilePairs(params.reads, flat: true)
 
 process FOO {
+    // organize the output directory meaningfully
     publishDir "$params.outdir/$sampleId/", pattern: '*.fq'
     publishDir "$params.outdir/$sampleId/counts", pattern: "*_counts.txt"
     publishDir "$params.outdir/$sampleId/outlooks", pattern: '*_outlook.txt'
